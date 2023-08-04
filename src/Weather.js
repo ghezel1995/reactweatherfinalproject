@@ -37,7 +37,7 @@ export default function Weather() {
             <span className='degree'>19</span>
             <span className='celsius'>°C</span>
           </div>
-          <div className='col-6'>
+          <div className='col-6 humidity-wind'>
             <ul>
               <li>Humidity: 20 %</li>
               <li>Wind: 5 km/h</li>

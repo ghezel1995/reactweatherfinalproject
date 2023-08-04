@@ -7,6 +7,14 @@ function App() {
     <div className='App'>
       <div className='container'>
         <Weather />
+        <footer>
+          This project coded by{' '}
+          <a href='https://www.linkedin.com/in/mahsaghezel/'>Mahsa Ghezel</a>{' '}
+          and It is{' '}
+          <a href='https://github.com/ghezel1995/reactweatherfinalproject'>
+            open-source
+          </a>
+        </footer>
       </div>
     </div>
   );
