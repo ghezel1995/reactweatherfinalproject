@@ -1,0 +1,33 @@
+.weather {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.main-icon {
+  width: 150px;
+}
+.main-temp {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.brief {
+  margin: 15px 0;
+}
+.date-and-desc {
+  padding-left: 0;
+  font-weight: 600;
+}
+.degree{
+  margin-left: 15px;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.celsius{
+  position: relative;
+  top: -12px;
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+    89.9deg,
+    rgba(178, 253, 238, 0.96) -8.1%,
+    rgb(207, 244, 254) 26.3%,
+    rgba(207, 244, 254, 0.48) 47.5%,
+    rgba(254, 219, 243, 0.63) 61.5%,
+    rgb(254, 219, 243) 78.7%,
+    rgb(254, 207, 210) 109.2%
+  );
+  color: #005792 !important;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+form {
+  width: 100%;
+}
