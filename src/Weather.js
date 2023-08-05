@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import './Weather.css';
 import axios from 'axios';
+import DateAndTime from './DateAndTime';
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
-
     let roundedTemperature = Math.round(response.data.temperature.current);
     setWeatherData({
       ready: true,
@@ -15,7 +14,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
-      time: 'Wed 19 : 16',
+      time: new Date(response.data.time * 1000),
     });
   }
 
@@ -41,7 +40,9 @@ export default function Weather(props) {
             <div className='col-6 brief'>
               <h1>{weatherData.city}</h1>
               <ul className='date-and-desc'>
-                <li>Last updated: {weatherData.time}</li>
+                <li>
+                  Last updated: <DateAndTime date={weatherData.time} />
+                </li>
                 <li className='text-capitalize'>{weatherData.description}</li>
               </ul>
             </div>
@@ -68,7 +69,6 @@ export default function Weather(props) {
     );
   } else {
     const apiKey = '6b27a083f4447ft3fa5232f2oed26a80';
-    let city = 'London';
     const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return 'Loading...';
