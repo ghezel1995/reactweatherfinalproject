@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
           <div className='col-6 main-temp'>
             <img
               className='main-icon'
-              src='http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png'
+              src={props.data.icon}
               alt={props.data.description}
             />
             <span className='degree'>{props.data.temperature}</span>
