@@ -1,3 +1,11 @@
+a {
+  color: #a393eb;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+a:hover {
+  opacity: 50%;
+}
 .weather {
   width: 70%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -21,17 +29,17 @@
   padding-left: 0;
   font-weight: 600;
 }
-.degree{
+.degree {
   margin-left: 15px;
   font-size: 4rem;
   font-weight: 600;
 }
-.celsius{
+.celsius {
   position: relative;
   top: -12px;
   font-weight: 500;
 }
-.humidity-wind{
+.humidity-wind {
   display: flex;
   justify-content: center;
   align-items: center;
