@@ -7,6 +7,10 @@ export default function Forecast(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
 
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.city]);
+
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
@@ -17,7 +21,7 @@ export default function Forecast(props) {
       <div className='forecast'>
         <div className='row'>
           {forecast.map(function (dailyForecast, index) {
-            if( index < 6) {
+            if (index < 6) {
               return <ForecastDay key={index} data={dailyForecast} />;
             }
           })}
