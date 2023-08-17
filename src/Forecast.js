@@ -23,7 +23,7 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className='forecast'>
-        <div className='row'>
+        <div className='d-md-flex justify-content-center align-items-center'>
           {forecast.map(function (dailyForecast, index) {
             if (index < 6) {
               return <ForecastDay key={index} data={dailyForecast} />;

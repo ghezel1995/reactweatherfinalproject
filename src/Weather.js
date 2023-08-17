@@ -10,6 +10,7 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     let roundedTemperature = Math.round(response.data.temperature.current);
+    console.log(response.data)
     setWeatherData({
       ready: true,
       temperature: roundedTemperature,
@@ -42,7 +43,7 @@ export default function Weather(props) {
         <div className='weather'>
           <form onSubmit={handleSubmit}>
             <div className='row'>
-              <div className='col-10'>
+              <div className='col-md-10'>
                 <input
                   type='search'
                   className='form-control search-input'
@@ -50,7 +51,7 @@ export default function Weather(props) {
                   onChange={handleChange}
                 />
               </div>
-              <div className='col-1'>
+              <div className='col-md-1 btn-container'>
                 <input type='submit' value='Search' className='search-btn' />
               </div>
             </div>

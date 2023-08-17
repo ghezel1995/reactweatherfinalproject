@@ -10,8 +10,32 @@ a:hover {
   width: 70%;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 50px auto;
-  padding: 20px;
+  padding: 30px;
   border-radius: 5px;
+}
+@media (max-width: 700px) {
+  .weather {
+    width: 90%;
+    margin: 20px auto; 
+    padding: 10px;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .search-btn{
+    width: 100%;
+    margin-top: 5px;
+  }
+  .brief-container{
+    font-size: 0.8rem;
+  }
+  
+}
+.brief-container{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .main-icon {
@@ -21,6 +45,7 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 45%;
 }
 .brief {
   margin: 15px 0;
@@ -44,6 +69,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   font-weight: 500;
+  width: 45%;
 }
 .search-input{
   background-color: transparent;
