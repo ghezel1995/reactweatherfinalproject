@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Online Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Online Weather App! This project is built with React.js and leverages various libraries and APIs to provide a seamless weather forecasting experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Real-time weather updates
+- Search for weather information by city
+- Beautiful weather animations
+- Responsive design using Bootstrap
+- Loading indicators for better user experience
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is built using the following technologies:
+- [React](https://reactjs.org/)
+- [Axios](https://axios-http.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [React Animated Weather](https://www.npmjs.com/package/react-animated-weather)
+- [React DOM](https://reactjs.org/docs/react-dom.html)
+- [React Loader Spinner](https://mhnpd.github.io/react-loader-spinner/)
+- [SheCodes Weather API](https://www.shecodes.io/learn/apis/weather)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To get a local copy up and running, follow these simple steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/ghezel1995/reactweatherfinalproject.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Navigate to the project directory**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    cd reactweatherfinalproject
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```
 
-### `npm run eject`
+3. **Install dependencies**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Start the development server**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm start
+    ```
 
-## Learn More
+2. **Open your browser and navigate to**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```url
+    http://localhost:3000
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Online demo for test on Netlify
 
-### Code Splitting
+[Online demo](https://finalweatherproject.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## API Key Setup
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project uses the SheCodes Weather API. To use this API, you need to sign up at [SheCodes](https://www.shecodes.io/learn/apis/weather) and get your API key.
